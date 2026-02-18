@@ -18,6 +18,7 @@ public class Runner implements CommandLineRunner {
     private final Colonnello colonnello;
     private final Generale generale;
 
+
     public Runner(AdapterClass adapter, Tenente tenente, Capitano capitano, Maggiore maggiore, Colonnello colonnello, Generale generale) {
         //es1:
         this.adapter = adapter;
@@ -28,6 +29,7 @@ public class Runner implements CommandLineRunner {
         this.maggiore = maggiore;
         this.colonnello = colonnello;
         this.generale = generale;
+
     }
 
     @Override
@@ -36,5 +38,14 @@ public class Runner implements CommandLineRunner {
         System.out.println("Nome completo: " + adapter.getNomeCompleto());
         System.out.println("Età: " + adapter.getEta());
 
+        //es3:
+
+
+        tenente.setSuperiore(capitano);
+        capitano.setSuperiore(maggiore);
+        maggiore.setSuperiore(colonnello);
+        colonnello.setSuperiore(generale);
+
+        tenente.check(3500);
     }
 }

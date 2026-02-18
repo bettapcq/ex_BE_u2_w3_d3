@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Maggiore extends Ufficiale {
 
-    public Maggiore(String funzione, int posizioneGerarchica, int stipendio) {
+    public Maggiore() {
         super("Capo amministrazione", 3, 3000);
     }
 

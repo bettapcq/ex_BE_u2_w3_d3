@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Generale extends Ufficiale {
 
-    public Generale(String funzione, int posizioneGerarchica, int stipendio) {
+    public Generale() {
         super("Capo brigata", 1, 5000);
     }
 

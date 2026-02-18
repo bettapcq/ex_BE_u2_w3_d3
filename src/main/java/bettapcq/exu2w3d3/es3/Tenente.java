@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class Tenente extends Ufficiale {
 
 
-    public Tenente(String funzione, int posizioneGerarchica, int stipendio) {
+    public Tenente() {
         super("Capo plotone", 5, 1000);
     }
 

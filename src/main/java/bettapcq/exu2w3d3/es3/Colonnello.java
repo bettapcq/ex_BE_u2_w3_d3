@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Colonnello extends Ufficiale {
-    public Colonnello(String funzione, int posizioneGerarchica, int stipendio) {
+    public Colonnello() {
         super("Capo reggimento", 2, 4000);
     }
 
